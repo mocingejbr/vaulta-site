@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VAULTA Privacy Policy — how we handle your data.">
+  <meta name="theme-color" content="#0D0A17">
+  <title>Privacy Policy — VAULTA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">VAULTA</a>
+        <a href="#" class="btn btn--sm">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="legal-hero">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: May 1, 2026</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="container">
+    <div class="legal-content">
+
+      <p>This Privacy Policy explains how VAULTA ("we", "our", or "the app") handles information in connection with your use of the VAULTA iOS application. We built VAULTA on a simple principle: your private files are none of our business.</p>
+
+      <h2>The Short Version</h2>
+      <p>We do not collect, store, or transmit your personal data. Your files never leave your device in readable form. We have no access to your vault contents — ever.</p>
+
+      <h2>Data We Do Not Collect</h2>
+      <p>VAULTA does not collect, transmit, or store any of the following:</p>
+      <ul>
+        <li>Your name, email address, or any personal identifiers</li>
+        <li>Your vault contents (photos, videos, documents, or files)</li>
+        <li>Usage analytics or behavioral data</li>
+        <li>Crash reports or diagnostic telemetry (beyond Apple's standard App Store Connect crash logs, which we do not control)</li>
+        <li>Device identifiers, advertising IDs, or location data</li>
+      </ul>
+      <p>VAULTA contains no third-party analytics SDKs, advertising SDKs, or tracking frameworks of any kind.</p>
+
+      <h2>Local Storage</h2>
+      <p>All files you import into VAULTA are stored entirely on your device. Encryption happens on-device before any file is written to storage — your original files are never saved in plaintext.</p>
+      <p>Encryption details:</p>
+      <ul>
+        <li><strong>Algorithm:</strong> AES-GCM with a 256-bit symmetric key</li>
+        <li><strong>Nonce:</strong> 12 bytes, randomly generated per encryption operation</li>
+        <li><strong>Integrity:</strong> 16-byte GCM authentication tag — verifies both authenticity and integrity on every read</li>
+        <li><strong>Key storage:</strong> Encryption keys are stored in the iOS Keychain and are never transmitted off-device</li>
+        <li><strong>Key lifecycle:</strong> Keys are cached in memory while your vault is unlocked and cleared immediately on lock</li>
+      </ul>
+      <p>We have no copy of your encryption keys. We cannot decrypt your vault. There is no "forgot passcode" recovery — if you lose your passcode and recovery key, your data cannot be recovered by anyone.</p>
+
+      <h2>iCloud Backup (VAULTA PRO)</h2>
+      <p>VAULTA PRO users may optionally enable encrypted iCloud backups. If enabled:</p>
+      <ul>
+        <li>Your vault data is encrypted on-device using your encryption key before being uploaded to iCloud</li>
+        <li>Only the encrypted ciphertext reaches iCloud — Apple cannot read your files</li>
+        <li>Restoring a backup requires your original recovery key; without it, the backup cannot be decrypted</li>
+        <li>You can disable iCloud backup at any time from within the app</li>
+      </ul>
+      <p>iCloud backup is governed by Apple's iCloud Terms and Privacy Policy in addition to this policy.</p>
+
+      <h2>Apple ID</h2>
+      <p>VAULTA may interact with your Apple ID solely for App Store purchases and, if enabled, iCloud backup. We do not receive, store, or process your Apple ID credentials or Apple ID-linked personal data.</p>
+
+      <h2>In-App Purchases</h2>
+      <p>VAULTA PRO is available as an in-app purchase processed entirely through Apple's App Store. We do not collect or store payment information. All billing is handled by Apple.</p>
+
+      <h2>Children</h2>
+      <p>VAULTA is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the app and you have concerns, contact us at <a href="mailto:ereskaapps@gmail.com">ereskaapps@gmail.com</a>.</p>
+
+      <h2>Security</h2>
+      <p>Because we do not collect your data, there is no central database to breach. Your security depends on the strength of your passcode and the safekeeping of your recovery key. We recommend:</p>
+      <ul>
+        <li>Using a strong, unique passcode</li>
+        <li>Storing your recovery key in a secure location outside the app</li>
+        <li>Keeping your iOS version up to date</li>
+      </ul>
+
+      <h2>Changes to This Policy</h2>
+      <p>If we update this Privacy Policy, we will post the revised version on this page and update the date above. We will notify you of material changes through the App Store update notes or within the app.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this Privacy Policy? Contact us at <a href="mailto:ereskaapps@gmail.com">ereskaapps@gmail.com</a>.</p>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">VAULTA</span>
+        <ul class="footer__links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+        <p class="footer__copy">© 2026 VAULTA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
