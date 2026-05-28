@@ -3,22 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VAULTA — Keep your real life private. Store photos, videos, and files with end-to-end encryption. Only you have access.">
+
+  <!-- Primary SEO -->
+  <title>Vaulta — Private Vault App for iPhone | Encrypted File Storage</title>
+  <meta name="description" content="Store photos, videos, and files with AES-256 encryption. Zero knowledge, offline-first, with decoy vault and break-in alerts. Download free on iPhone.">
+  <meta name="author" content="Martin Gábor">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mocingejbr.github.io/vaulta-site/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VAULTA">
+  <meta property="og:title" content="Vaulta — Private Vault App for iPhone">
+  <meta property="og:description" content="Store photos, videos, and files with AES-256 encryption. Zero knowledge, offline-first, with decoy vault and break-in alerts.">
+  <meta property="og:url" content="https://mocingejbr.github.io/vaulta-site/">
+  <meta property="og:image" content="https://mocingejbr.github.io/vaulta-site/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="VAULTA — Privacy-first vault app for iPhone">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- PWA / Mobile -->
   <meta name="theme-color" content="#0D0A17">
-  <title>VAULTA — Keep your real life private</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="VAULTA">
+
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "VAULTA",
+    "alternateName": "Vaulta Vault App",
+    "applicationCategory": "UtilitiesApplication",
+    "applicationSubCategory": "Privacy & Security",
+    "operatingSystem": "iOS",
+    "downloadUrl": "https://apps.apple.com/us/app/vaulta-secure-file-vault/id6764309966",
+    "url": "https://mocingejbr.github.io/vaulta-site/",
+    "description": "VAULTA is a privacy-first vault app for iPhone. Store photos, videos, and files with AES-256 end-to-end encryption. Zero knowledge — not even the developer can access your files. Features include decoy vault, break-in alerts, iCloud encrypted backup, and offline-first storage.",
+    "screenshot": "https://mocingejbr.github.io/vaulta-site/og-image.png",
+    "featureList": [
+      "AES-GCM 256-bit end-to-end encryption",
+      "Decoy vault with separate passcode",
+      "Encrypted iCloud backup (PRO)",
+      "Photos, videos, and document support",
+      "Break-in alerts",
+      "Offline-first storage",
+      "Face ID and passcode unlock",
+      "Zero knowledge architecture"
+    ],
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free tier"
+      },
+      {
+        "@type": "Offer",
+        "name": "VAULTA PRO Weekly",
+        "price": "1.99",
+        "priceCurrency": "USD",
+        "description": "Weekly subscription"
+      },
+      {
+        "@type": "Offer",
+        "name": "VAULTA PRO Monthly",
+        "price": "5.99",
+        "priceCurrency": "USD",
+        "description": "Monthly subscription"
+      },
+      {
+        "@type": "Offer",
+        "name": "VAULTA PRO Yearly",
+        "price": "49.99",
+        "priceCurrency": "USD",
+        "description": "Yearly subscription"
+      }
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Martin Gábor",
+      "email": "ereskaapps@gmail.com"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Martin Gábor"
+    },
+    "inLanguage": "en",
+    "contentRating": "4+"
+  }
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VAULTA",
+    "url": "https://mocingejbr.github.io/vaulta-site/",
+    "logo": "https://mocingejbr.github.io/vaulta-site/og-image.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "ereskaapps@gmail.com",
+      "contactType": "customer support"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Martin Gábor"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Vaulta free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Vaulta is free to download and use. VAULTA PRO is an optional upgrade that unlocks encrypted iCloud backup and additional vault options. PRO is available as a weekly ($1.99), monthly ($5.99), or yearly ($49.99) subscription."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Vaulta encrypt my files?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vaulta uses AES-GCM with a 256-bit symmetric key. Files are encrypted on your device before being written to storage — plaintext never touches disk. Your encryption key is stored in the iOS Keychain and is never transmitted off your device."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can anyone access my vault?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Vaulta is zero knowledge — not even the developer can read your files. Only your passcode or Face ID unlocks the vault. There is no back door, no server-side access, and no way for anyone to decrypt your files without your passcode and recovery key."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Vaulta use iCloud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iCloud encrypted backup is an optional VAULTA PRO feature. If you enable it, your vault data is encrypted on-device before upload — Apple cannot read your files. Restoring a backup requires your recovery key. You can disable iCloud backup at any time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I forget my passcode?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you forget your passcode, you can use your recovery key to regain access. If you lose both your passcode and your recovery key, your encrypted data cannot be recovered by anyone — including us. We strongly recommend storing your recovery key in a secure location outside the app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Vaulta safe from break-ins?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Vaulta includes break-in alerts that notify you if someone tries to access your vault with the wrong passcode. The decoy vault feature also lets you set a separate passcode that opens a fake vault, protecting your real files even under duress."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Vaulta work without an internet connection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Vaulta is offline-first. All files are stored locally on your device and are always accessible without an internet connection. No account or internet connection is required to use the core features."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What file types does Vaulta support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vaulta supports photos, videos, and documents. You can import files from your iPhone camera roll or the Files app. All file types are encrypted regardless of format."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Site navigation">
     <div class="container">
       <div class="nav__inner">
-        <span class="nav__logo">VAULTA</span>
-        <a href="https://apps.apple.com/sk/app/vaulta-private-photo-vault/id6764309966" class="btn btn--sm">Download</a>
+        <a href="/" class="nav__logo" aria-label="VAULTA — Home">VAULTA</a>
+        <a href="https://apps.apple.com/us/app/vaulta-secure-file-vault/id6764309966" class="btn btn--sm" aria-label="Download VAULTA on the App Store">Download</a>
       </div>
     </div>
   </nav>
+
+  <main id="main-content">
 
   <!-- HERO -->
   <section class="hero">
@@ -28,7 +220,7 @@
       <p class="hero__tagline">Keep your real life private.</p>
       <p class="hero__desc">Store photos, videos, and files securely. Only you have access.</p>
       <div class="hero__cta">
-        <a href="https://apps.apple.com/sk/app/vaulta-private-photo-vault/id6764309966" class="app-store-btn">
+        <a href="https://apps.apple.com/us/app/vaulta-secure-file-vault/id6764309966" class="app-store-btn" aria-label="Download VAULTA on the App Store">
           <svg class="app-store-btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
           </svg>
@@ -42,7 +234,7 @@
   </section>
 
   <!-- FEATURES -->
-  <section class="features">
+  <section class="features" id="features">
     <div class="container">
       <div class="section-header fade-in">
         <h2>Built for privacy. Not compromise.</h2>
@@ -115,7 +307,7 @@
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="how-it-works">
+  <section class="how-it-works" id="how-it-works">
     <div class="container">
       <div class="section-header fade-in">
         <h2>How it works</h2>
@@ -146,7 +338,7 @@
   </section>
 
   <!-- TRUST -->
-  <section class="trust">
+  <section class="trust" id="why-vaulta">
     <div class="container">
       <div class="section-header fade-in">
         <h2>Your data. Your control.</h2>
@@ -172,13 +364,66 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 id="faq-heading">Frequently asked questions</h2>
+        <p>Everything you need to know about Vaulta.</p>
+      </div>
+      <div class="faq-list" role="list">
+
+        <div class="faq-item fade-in" role="listitem">
+          <h3 class="faq-item__question">Is Vaulta free?</h3>
+          <p class="faq-item__answer">Yes. Vaulta is free to download and use. <strong>VAULTA PRO</strong> is an optional upgrade that unlocks encrypted iCloud backup and additional vault options, available as a weekly ($1.99), monthly ($5.99), or yearly ($49.99) subscription.</p>
+        </div>
+
+        <div class="faq-item fade-in" role="listitem">
+          <h3 class="faq-item__question">How does Vaulta encrypt my files?</h3>
+          <p class="faq-item__answer">Vaulta uses AES-GCM with a 256-bit symmetric key. Files are encrypted on your device before being written to storage — plaintext never touches disk. Your encryption key lives in the iOS Keychain and never leaves your device.</p>
+        </div>
+
+        <div class="faq-item fade-in" role="listitem">
+          <h3 class="faq-item__question">Can anyone access my vault?</h3>
+          <p class="faq-item__answer">No. Vaulta is zero knowledge — not even the developer can read your files. Only your passcode or Face ID unlocks the vault. There is no back door, no server-side access, and no master key.</p>
+        </div>
+
+        <div class="faq-item fade-in" role="listitem">
+          <h3 class="faq-item__question">Does Vaulta use iCloud?</h3>
+          <p class="faq-item__answer">iCloud backup is an optional <strong>VAULTA PRO</strong> feature. If enabled, vault data is encrypted on-device before upload — Apple cannot read your files. Restoring requires your recovery key. You can disable it at any time from within the app.</p>
+        </div>
+
+        <div class="faq-item fade-in" role="listitem">
+          <h3 class="faq-item__question">What happens if I forget my passcode?</h3>
+          <p class="faq-item__answer">You can use your recovery key to regain access. If you lose both your passcode and recovery key, your data cannot be recovered by anyone — including us. Store your recovery key somewhere safe outside the app.</p>
+        </div>
+
+        <div class="faq-item fade-in" role="listitem">
+          <h3 class="faq-item__question">Is Vaulta safe from break-ins?</h3>
+          <p class="faq-item__answer">Yes. Break-in alerts notify you if someone tries to access your vault with the wrong passcode. The decoy vault lets you set a second passcode that opens a separate vault, protecting your real files even under pressure.</p>
+        </div>
+
+        <div class="faq-item fade-in" role="listitem">
+          <h3 class="faq-item__question">Does Vaulta work without internet?</h3>
+          <p class="faq-item__answer">Yes. Vaulta is offline-first. All files live locally on your device and are always accessible without a connection. No account or internet is required to use any core feature.</p>
+        </div>
+
+        <div class="faq-item fade-in" role="listitem">
+          <h3 class="faq-item__question">What file types does Vaulta support?</h3>
+          <p class="faq-item__answer">Vaulta supports photos, videos, and documents. Import files from your iPhone camera roll or the Files app. All file types are encrypted regardless of format.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
-  <section class="cta-section">
+  <section class="cta-section" id="download">
     <div class="container">
       <h2 class="fade-in">Your privacy starts now.</h2>
       <p class="fade-in">Download VAULTA and take back control.</p>
       <div class="fade-in">
-        <a href="#" class="app-store-btn">
+        <a href="https://apps.apple.com/us/app/vaulta-secure-file-vault/id6764309966" class="app-store-btn" aria-label="Download VAULTA on the App Store">
           <svg class="app-store-btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
           </svg>
@@ -190,6 +435,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">

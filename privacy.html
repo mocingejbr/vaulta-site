@@ -3,30 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VAULTA Privacy Policy — how we handle your data.">
+
+  <!-- Primary SEO -->
+  <title>Privacy Policy — VAULTA Vault App</title>
+  <meta name="description" content="VAULTA collects no personal data. Your files are encrypted on-device with AES-256. We have zero access to your vault. Read our full privacy policy.">
+  <meta name="author" content="Martin Gábor">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mocingejbr.github.io/vaulta-site/privacy.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VAULTA">
+  <meta property="og:title" content="Privacy Policy — VAULTA">
+  <meta property="og:description" content="VAULTA collects no personal data. Your files stay on your device, encrypted with AES-256. Zero knowledge architecture.">
+  <meta property="og:url" content="https://mocingejbr.github.io/vaulta-site/privacy.html">
+  <meta property="og:image" content="https://mocingejbr.github.io/vaulta-site/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- PWA -->
   <meta name="theme-color" content="#0D0A17">
-  <title>Privacy Policy — VAULTA</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://mocingejbr.github.io/vaulta-site/privacy.html",
+        "url": "https://mocingejbr.github.io/vaulta-site/privacy.html",
+        "name": "Privacy Policy — VAULTA",
+        "description": "VAULTA Privacy Policy explaining how the app handles data. VAULTA collects no personal data and has zero access to vault contents.",
+        "isPartOf": {
+          "@id": "https://mocingejbr.github.io/vaulta-site/"
+        },
+        "inLanguage": "en",
+        "dateModified": "2026-05-01"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "VAULTA",
+            "item": "https://mocingejbr.github.io/vaulta-site/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Privacy Policy",
+            "item": "https://mocingejbr.github.io/vaulta-site/privacy.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Site navigation">
     <div class="container">
       <div class="nav__inner">
         <a href="index.html" class="nav__logo">VAULTA</a>
-        <a href="https://apps.apple.com/sk/app/vaulta-private-photo-vault/id6764309966" class="btn btn--sm">Download</a>
+        <a href="https://apps.apple.com/us/app/vaulta-secure-file-vault/id6764309966" class="btn btn--sm" aria-label="Download VAULTA on the App Store">Download</a>
       </div>
     </div>
   </nav>
 
+  <main id="main-content">
+
   <!-- HERO -->
-  <div class="legal-hero">
+  <header class="legal-hero">
     <div class="container">
       <h1>Privacy Policy</h1>
       <p>Last updated: May 1, 2026</p>
     </div>
-  </div>
+  </header>
 
   <!-- CONTENT -->
   <div class="container">
@@ -96,14 +159,17 @@
     </div>
   </div>
 
+  </main>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <span class="footer__logo">VAULTA</span>
+        <a href="index.html" class="footer__logo">VAULTA</a>
         <ul class="footer__links">
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="mailto:ereskaapps@gmail.com">Contact</a></li>
         </ul>
         <p class="footer__copy">© 2026 VAULTA. All rights reserved.</p>
       </div>

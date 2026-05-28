@@ -1,0 +1,10 @@
+{
+  "name": "VAULTA — Private Vault App",
+  "short_name": "VAULTA",
+  "description": "Store photos, videos, and files with AES-256 encryption. Zero knowledge vault for iPhone.",
+  "start_url": "/VaultaSite/",
+  "display": "browser",
+  "background_color": "#0D0A17",
+  "theme_color": "#0D0A17",
+  "lang": "en"
+}
