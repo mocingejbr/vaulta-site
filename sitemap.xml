@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://mocingejbr.github.io/vaulta-site/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <loc>https://vaulta-secure.app/</loc>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://mocingejbr.github.io/vaulta-site/privacy.html</loc>
+    <loc>https://vaulta-secure.app/privacy.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://mocingejbr.github.io/vaulta-site/terms.html</loc>
+    <loc>https://vaulta-secure.app/terms.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

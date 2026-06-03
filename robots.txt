@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mocingejbr.github.io/vaulta-site/sitemap.xml
+Sitemap: https://vaulta-secure.app/sitemap.xml
