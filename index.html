@@ -5,22 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
-  <title>Vaulta — Private Vault App for iPhone | Encrypted File Storage</title>
-  <meta name="description" content="Store photos, videos, and files with AES-256 encryption. Zero knowledge, offline-first, with decoy vault and break-in alerts. Download free on iPhone.">
+  <title>Secure File Vault for iPhone — Hide Photos &amp; Files | Vaulta</title>
+  <meta name="description" content="Encrypt and hide any file — photos, videos, documents, PDFs — behind Face ID and AES-256. Offline-first, zero-knowledge, free on iPhone.">
   <meta name="author" content="Martin Gábor">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://vaulta-secure.app/">
 
+  <!-- LCP preload -->
+  <link rel="preload" as="image" href="screenshots/FaceIDProtected.jpeg" type="image/jpeg">
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="VAULTA">
-  <meta property="og:title" content="Vaulta — Private Vault App for iPhone">
-  <meta property="og:description" content="Store photos, videos, and files with AES-256 encryption. Zero knowledge, offline-first, with decoy vault and break-in alerts.">
+  <meta property="og:title" content="Secure File Vault for iPhone — Vaulta">
+  <meta property="og:description" content="Encrypt and hide any file — photos, videos, documents, PDFs — behind Face ID and AES-256. Offline-first, zero-knowledge, free on iPhone.">
   <meta property="og:url" content="https://vaulta-secure.app/">
   <meta property="og:image" content="https://vaulta-secure.app/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="VAULTA — Privacy-first vault app for iPhone">
+  <meta property="og:image:alt" content="VAULTA — Secure file vault app for iPhone">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Secure File Vault for iPhone — Vaulta">
+  <meta name="twitter:description" content="Encrypt and hide any file — photos, videos, documents, PDFs — behind Face ID and AES-256. Offline-first, zero-knowledge, free on iPhone.">
+  <meta name="twitter:image" content="https://vaulta-secure.app/og-image.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
@@ -49,17 +58,22 @@
     "operatingSystem": "iOS",
     "downloadUrl": "https://apps.apple.com/app/apple-store/id6764309966?pt=117865370&ct=vaulta-site&mt=8",
     "url": "https://vaulta-secure.app/",
-    "description": "VAULTA is a privacy-first vault app for iPhone. Store photos, videos, and files with AES-256 end-to-end encryption. Zero knowledge — not even the developer can access your files. Features include decoy vault, break-in alerts, iCloud encrypted backup, and offline-first storage.",
+    "description": "VAULTA is a secure file vault app for iPhone that encrypts and hides any file — photos, videos, PDFs, Office documents, audio recordings, ZIP archives, and more — with AES-256 end-to-end encryption. Zero knowledge architecture: not even the developer can access your files. Features include decoy vault, break-in alerts, encrypted iCloud backup, and offline-first storage. The best way to hide photos, protect private documents, and store any sensitive file on iPhone.",
     "screenshot": "https://vaulta-secure.app/og-image.png",
+    "sameAs": ["https://apps.apple.com/app/apple-store/id6764309966"],
     "featureList": [
       "AES-GCM 256-bit end-to-end encryption",
+      "Secure file vault for any file type",
+      "Private photo and video vault for iPhone",
+      "Photos, videos, PDFs, Office files, audio recordings, ZIP archives, and any file type",
       "Decoy vault with separate passcode",
       "Encrypted iCloud backup (PRO)",
-      "Photos, videos, and document support",
-      "Break-in alerts",
+      "Break-in alerts (PRO)",
       "Offline-first storage",
-      "Face ID and passcode unlock",
-      "Zero knowledge architecture"
+      "Face ID, Touch ID, and passcode unlock",
+      "Zero knowledge architecture",
+      "No account required",
+      "Hide photos on iPhone with AES-256 encryption"
     ],
     "offers": [
       {
@@ -184,7 +198,55 @@
         "name": "What file types does Vaulta support?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Vaulta supports photos, videos, and documents. You can import files from your iPhone camera roll or the Files app. All file types are encrypted regardless of format."
+          "text": "Vaulta supports any file type your iPhone's Files app can share — photos, videos, PDFs, Word documents, Excel files, audio recordings, ZIP archives, and more. All file types are encrypted regardless of format."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why not just use Apple's Hidden Album?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Apple's Hidden Album hides photos from the main gallery but does not encrypt them — anyone who unlocks your iPhone can view them from Settings. Vaulta encrypts every file with AES-256 before it touches storage, so a file is unreadable without your passcode and recovery key."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between a secure file vault and the iOS Files app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The iOS Files app has no encryption or lock — files stored there are accessible to anyone who can unlock your phone. Vaulta adds a separate encrypted container with its own passcode, Face ID lock, and AES-256 encryption. No file in Vaulta is readable without your key."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Vaulta safer than storing photos and files in iCloud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard iCloud storage is encrypted in transit and at rest, but Apple holds the encryption keys and can access your files. Vaulta's optional iCloud backup encrypts your data on-device before upload — Apple receives only ciphertext and cannot read it. Your recovery key never leaves your device."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is zero-knowledge encryption?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zero-knowledge means only you can decrypt your data. Vaulta never transmits your encryption keys, passcode, or file contents to any server. The developer has no master key and cannot assist with recovery — your passcode and recovery key are the only path to your data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Vaulta protect private documents and PDFs, not just photos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Vaulta encrypts any file type — PDFs, Word documents, Excel files, audio recordings, ZIP archives, and more. Import from your iPhone's Files app or camera roll. Every file, regardless of format, is encrypted with AES-256 before storage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if my phone is stolen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A thief cannot read your vault files. AES-256 encryption protects them even if the device storage is extracted. The decoy vault (PRO) lets you reveal a separate vault under duress while keeping your real files hidden. Break-in alerts (PRO) notify you if repeated wrong passcodes are entered."
         }
       }
     ]
@@ -208,10 +270,24 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <span class="hero__eyebrow">#1 Privacy Vault for iPhone</span>
-      <h1 class="hero__title">VAULTA</h1>
-      <p class="hero__tagline">Keep your real life private.</p>
-      <p class="hero__desc">Store photos, videos, and files securely. Only you have access.</p>
+      <span class="hero__eyebrow">VAULTA</span>
+      <h1 class="hero__title hero__title--long">Secure File &amp; Photo Vault for iPhone</h1>
+      <p class="hero__tagline">Encrypt and hide any file — photos, videos, documents, and more — behind Face ID, AES-256 encryption, and zero-knowledge security. Your data stays private, even if someone gets your phone.</p>
+      <p class="hero__desc">No account required. Offline-first. Only you hold the key.</p>
+      <div class="hero__screenshots">
+        <figure class="hero__screenshot">
+          <img src="screenshots/FaceIDProtected.jpeg" alt="Vaulta vault protected by Face ID on iPhone" width="1320" height="2868" fetchpriority="high">
+          <figcaption>Face ID Protected</figcaption>
+        </figure>
+        <figure class="hero__screenshot">
+          <img src="screenshots/NoAccount.NoTracking.jpeg" alt="Vaulta requires no account and has no tracking" width="1320" height="2868" loading="lazy">
+          <figcaption>No Account &amp; No Tracking</figcaption>
+        </figure>
+        <figure class="hero__screenshot">
+          <img src="screenshots/yourFilesStayOnYouPhone.jpeg" alt="Vaulta stores your files on your iPhone, not the cloud" width="1320" height="2868" loading="lazy">
+          <figcaption>Your Files Stay On Your Phone</figcaption>
+        </figure>
+      </div>
       <div class="hero__cta">
         <a href="https://apps.apple.com/app/apple-store/id6764309966?pt=117865370&amp;ct=vaulta-site&amp;mt=8" class="app-store-btn" aria-label="Download VAULTA on the App Store">
           <svg class="app-store-btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -276,7 +352,7 @@
             </svg>
           </div>
           <h3 class="feature-card__title">Offline-first</h3>
-          <p class="feature-card__desc">No internet needed. Your files stay local, always accessible.</p>
+          <p class="feature-card__desc">Your files stay on your device instead of someone else's servers.</p>
         </div>
 
         <div class="feature-card fade-in">
@@ -286,7 +362,7 @@
             </svg>
           </div>
           <h3 class="feature-card__title">End-to-end encryption</h3>
-          <p class="feature-card__desc">Military-grade encryption. Zero knowledge — not even we can read your files.</p>
+          <p class="feature-card__desc">Even if someone gets your phone, your files remain unreadable.</p>
         </div>
 
         <div class="feature-card fade-in">
@@ -296,7 +372,7 @@
             </svg>
           </div>
           <h3 class="feature-card__title">Decoy vault <span class="badge-pro">PRO</span></h3>
-          <p class="feature-card__desc">Hidden vault with a separate passcode. Nobody knows what's inside.</p>
+          <p class="feature-card__desc">Open a separate vault with a different passcode to protect sensitive files under pressure.</p>
         </div>
 
         <div class="feature-card fade-in">
@@ -306,7 +382,7 @@
             </svg>
           </div>
           <h3 class="feature-card__title">iCloud encrypted backup <span class="badge-pro">PRO</span></h3>
-          <p class="feature-card__desc">Encrypted backups via iCloud. Only you can restore with your recovery key.</p>
+          <p class="feature-card__desc">Back up to your own iCloud — encrypted before it leaves your phone, unreadable without your recovery key.</p>
         </div>
 
         <div class="feature-card fade-in">
@@ -316,7 +392,7 @@
             </svg>
           </div>
           <h3 class="feature-card__title">File &amp; media support</h3>
-          <p class="feature-card__desc">Photos, videos, documents — all in one secure place.</p>
+          <p class="feature-card__desc">Photos, videos, PDFs, Office files, audio, ZIP archives — any file type, all encrypted.</p>
         </div>
 
         <div class="feature-card fade-in">
@@ -326,9 +402,151 @@
             </svg>
           </div>
           <h3 class="feature-card__title">Break-in alerts <span class="badge-pro">PRO</span></h3>
-          <p class="feature-card__desc">Get notified if someone tries to break into your vault.</p>
+          <p class="feature-card__desc">Get alerted after repeated wrong passcode attempts, with photos of the attempt stored only on your device.</p>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY USE A SECURE FILE VAULT -->
+  <section class="trust" id="why-file-vault">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Why Use a Secure File Vault?</h2>
+        <p>Your iPhone's built-in protections aren't enough for truly private files.</p>
+      </div>
+      <div class="trust-grid trust-grid--4">
+
+        <div class="trust-card fade-in">
+          <div class="trust-card__icon">📁</div>
+          <p class="trust-card__title">Apple's Files app has no encryption</p>
+          <p class="trust-card__desc">Files stored in the iOS Files app are unencrypted. Anyone who unlocks your phone can open them.</p>
+        </div>
+
+        <div class="trust-card fade-in">
+          <div class="trust-card__icon">🙈</div>
+          <p class="trust-card__title">Hidden Album isn't encrypted</p>
+          <p class="trust-card__desc">The Hidden Album removes photos from your main gallery but leaves them unencrypted — accessible from Settings.</p>
+        </div>
+
+        <div class="trust-card fade-in">
+          <div class="trust-card__icon">🔓</div>
+          <p class="trust-card__title">Face ID alone isn't encryption</p>
+          <p class="trust-card__desc">Face ID gates access to your phone, but it doesn't encrypt any files. A bypass defeats all protections at once.</p>
+        </div>
+
+        <div class="trust-card fade-in">
+          <div class="trust-card__icon">🛡️</div>
+          <p class="trust-card__title">Sensitive files need a second layer</p>
+          <p class="trust-card__desc">AES-256 encryption in Vaulta means files are unreadable even if your device is unlocked, lost, or forensically examined.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STORE ANY FILE TYPE -->
+  <section class="features" id="file-types">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Store Any File Type, Encrypted</h2>
+        <p>Not just photos. Vaulta is a secure vault for every file on your iPhone — the key differentiator vs photo-only apps.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon" style="background: rgba(255,193,97,0.15);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC161" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Photos &amp; Videos</h3>
+          <p class="feature-card__desc">Camera roll photos, screen recordings, downloaded videos — any image or video format.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon" style="background: rgba(255,97,97,0.15);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6161" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">PDFs &amp; Documents</h3>
+          <p class="feature-card__desc">Bank statements, contracts, ID scans, passports — anything sensitive in document form.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon" style="background: rgba(97,158,255,0.15);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#619EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Office Files</h3>
+          <p class="feature-card__desc">Word documents, Excel spreadsheets, PowerPoint files — imported directly from the Files app.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon" style="background: rgba(56,217,122,0.15);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38D97A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Audio Files</h3>
+          <p class="feature-card__desc">Voice memos, interview recordings, private audio — stored and encrypted like any other file.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon" style="background: rgba(184,112,255,0.15);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B870FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">ZIP Archives</h3>
+          <p class="feature-card__desc">Import and store compressed archives from the Files app. Encrypted as-is, no extraction needed.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon" style="background: rgba(71,209,235,0.15);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#47D1EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Any File Type</h3>
+          <p class="feature-card__desc">If your iPhone's Files app can share it, Vaulta can encrypt it. No format restrictions.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HIDE PRIVATE PHOTOS & VIDEOS -->
+  <section class="photo-vault-section" id="photo-vault">
+    <div class="container">
+      <div class="photo-vault-inner fade-in">
+        <div class="photo-vault-content">
+          <h2>Hide Private Photos &amp; Videos on iPhone</h2>
+          <p class="photo-vault-lead">Vaulta goes beyond hiding — it encrypts, so your photos and videos are completely unreadable even if someone accesses your device.</p>
+          <ul class="photo-vault-list">
+            <li>
+              <strong>Encrypted, not just hidden.</strong> Unlike the Hidden Album, photos in Vaulta are AES-256 encrypted on-device. No passcode means no photo — not just no gallery view.
+            </li>
+            <li>
+              <strong>Separate from your camera roll.</strong> Imported photos are moved into an isolated, encrypted vault. Nothing leaks into standard photo apps or backups.
+            </li>
+            <li>
+              <strong>Import from any source.</strong> Bring in photos from your camera roll, AirDrop, or directly from the Files app. All imports are encrypted the moment they enter Vaulta.
+            </li>
+          </ul>
+          <a href="https://apps.apple.com/app/apple-store/id6764309966?pt=117865370&amp;ct=vaulta-site&amp;mt=8" class="app-store-btn" aria-label="Download Vaulta — private photo vault for iPhone">
+            <svg class="app-store-btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span class="app-store-btn__text">
+              <span class="app-store-btn__label">Download on the</span>
+              <span class="app-store-btn__store">App Store</span>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -364,13 +582,125 @@
     </div>
   </section>
 
+  <!-- HOW VAULTA PROTECTS YOUR FILES -->
+  <section class="features" id="security">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>How Vaulta Protects Your Files</h2>
+        <p>Every layer of the security stack, explained.</p>
+      </div>
+      <div class="security-steps fade-in">
+
+        <div class="security-step">
+          <div class="step__number">1</div>
+          <div class="security-step__text">
+            <h3 class="step__title">Encrypted before storage</h3>
+            <p class="step__desc">When you import a file, it's encrypted on-device before anything is written to disk. Plaintext never exists in storage.</p>
+          </div>
+        </div>
+
+        <div class="security-step">
+          <div class="step__number">2</div>
+          <div class="security-step__text">
+            <h3 class="step__title">AES-GCM 256-bit cipher</h3>
+            <p class="step__desc">The same algorithm used by banks, governments, and secure messaging apps. A 256-bit key has more combinations than atoms in the observable universe.</p>
+          </div>
+        </div>
+
+        <div class="security-step">
+          <div class="step__number">3</div>
+          <div class="security-step__text">
+            <h3 class="step__title">Keys in the iOS Keychain</h3>
+            <p class="step__desc">Your encryption key is stored in the iOS Keychain — protected by the Secure Enclave. Keys are never transmitted off your device.</p>
+          </div>
+        </div>
+
+        <div class="security-step">
+          <div class="step__number">4</div>
+          <div class="security-step__text">
+            <h3 class="step__title">Zero-knowledge architecture</h3>
+            <p class="step__desc">Vaulta has no server, no account, and no developer access. We cannot decrypt your vault, reset your passcode, or recover your files.</p>
+          </div>
+        </div>
+
+        <div class="security-step">
+          <div class="step__number">5</div>
+          <div class="security-step__text">
+            <h3 class="step__title">On-device recovery key</h3>
+            <p class="step__desc">Your recovery key is generated on-device and stored only where you choose to keep it. Without it, encrypted data cannot be restored by anyone.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="trust" id="comparison">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Vaulta vs Apple's Hidden Album</h2>
+        <p>See exactly what each option protects — and where it falls short.</p>
+      </div>
+      <div class="comparison-wrapper fade-in">
+        <table class="comparison-table" role="table">
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Vaulta</th>
+              <th scope="col">Hidden Album</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Encryption</td>
+              <td class="comparison-table__yes">AES-256 on-device</td>
+              <td class="comparison-table__no">None</td>
+            </tr>
+            <tr>
+              <td>Face ID</td>
+              <td class="comparison-table__yes">✓ Vault-level lock</td>
+              <td class="comparison-table__partial">✓ View-only gate</td>
+            </tr>
+            <tr>
+              <td>Decoy Vault</td>
+              <td class="comparison-table__yes">✓ PRO</td>
+              <td class="comparison-table__no">✗</td>
+            </tr>
+            <tr>
+              <td>Break-in Alerts</td>
+              <td class="comparison-table__yes">✓ PRO</td>
+              <td class="comparison-table__no">✗</td>
+            </tr>
+            <tr>
+              <td>Document Storage</td>
+              <td class="comparison-table__yes">✓ All file types</td>
+              <td class="comparison-table__no">✗ Photos only</td>
+            </tr>
+            <tr>
+              <td>Encrypted Backup</td>
+              <td class="comparison-table__yes">✓ PRO</td>
+              <td class="comparison-table__no">✗</td>
+            </tr>
+            <tr>
+              <td>Offline Access</td>
+              <td class="comparison-table__yes">✓ Always</td>
+              <td class="comparison-table__yes">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="comparison-note fade-in">Apple's Files app also has no per-file encryption or lock screen — files stored there are accessible to anyone who unlocks your iPhone.</p>
+    </div>
+  </section>
+
   <!-- TRUST -->
   <section class="trust" id="why-vaulta">
     <div class="container">
       <div class="section-header fade-in">
         <h2>Your data. Your control.</h2>
       </div>
-      <div class="trust-grid">
+      <div class="trust-grid trust-grid--4">
 
         <div class="trust-card fade-in">
           <div class="trust-card__icon">🔐</div>
@@ -388,6 +718,65 @@
           <div class="trust-card__icon">🗝️</div>
           <p class="trust-card__title">Recovery key required for restore</p>
           <p class="trust-card__desc">Without your recovery key, nobody — including us — can decrypt your vault. True zero knowledge.</p>
+        </div>
+
+        <div class="trust-card fade-in">
+          <div class="trust-card__icon">🔑</div>
+          <p class="trust-card__title">Multiple ways to lock your vault</p>
+          <p class="trust-card__desc">Face ID, Touch ID, 4-digit PIN, 6-digit PIN, alphanumeric passcode. Plus a separate decoy passcode that opens a different vault.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIATION -->
+  <section class="differentiation" id="differentiation">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Why Choose Vaulta Instead of Other Vault Apps?</h2>
+        <p>Vaulta is designed around one principle: your files belong to you alone.</p>
+      </div>
+      <div class="differentiation-grid fade-in">
+
+        <div class="differentiation-item">
+          <span class="differentiation-item__icon">⚙️</span>
+          <div>
+            <h3 class="differentiation-item__title">Privacy-first architecture</h3>
+            <p class="differentiation-item__desc">No analytics SDKs, no account creation, no server. Nothing is transmitted because there's nothing to transmit to.</p>
+          </div>
+        </div>
+
+        <div class="differentiation-item">
+          <span class="differentiation-item__icon">📵</span>
+          <div>
+            <h3 class="differentiation-item__title">Offline-first design</h3>
+            <p class="differentiation-item__desc">Vaulta works without internet. Your encrypted file storage is always accessible, regardless of network conditions.</p>
+          </div>
+        </div>
+
+        <div class="differentiation-item">
+          <span class="differentiation-item__icon">📂</span>
+          <div>
+            <h3 class="differentiation-item__title">Not photo-only</h3>
+            <p class="differentiation-item__desc">Vaulta encrypts any file type — PDFs, Office documents, audio recordings, ZIP archives. A true secure file vault, not just a photo hider.</p>
+          </div>
+        </div>
+
+        <div class="differentiation-item">
+          <span class="differentiation-item__icon">🎭</span>
+          <div>
+            <h3 class="differentiation-item__title">Decoy vault protection</h3>
+            <p class="differentiation-item__desc">A second passcode opens a completely separate vault. Your real files stay hidden even if you're under pressure to unlock the app.</p>
+          </div>
+        </div>
+
+        <div class="differentiation-item">
+          <span class="differentiation-item__icon">🔒</span>
+          <div>
+            <h3 class="differentiation-item__title">Zero-knowledge, by design</h3>
+            <p class="differentiation-item__desc">The developer cannot see your files, reset your passcode, or hand over your data. There's simply no server to hand data from.</p>
+          </div>
         </div>
 
       </div>
@@ -508,7 +897,80 @@
 
         <details class="faq-item fade-in">
           <summary class="faq-item__question">What file types does Vaulta support?</summary>
-          <p class="faq-item__answer">Vaulta supports photos, videos, and documents. Import files from your iPhone camera roll or the Files app. All file types are encrypted regardless of format.</p>
+          <p class="faq-item__answer">Vaulta supports any file type your iPhone's Files app can share — photos, videos, PDFs, Word documents, Excel files, audio recordings, ZIP archives, and more. All file types are encrypted regardless of format.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Why not just use Apple's Hidden Album?</summary>
+          <p class="faq-item__answer">Apple's Hidden Album hides photos from the main gallery but does not encrypt them — anyone who unlocks your iPhone can view them from Settings. Vaulta encrypts every file with AES-256 before it touches storage, so a file is unreadable without your passcode and recovery key.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">What's the difference between a secure file vault and the iOS Files app?</summary>
+          <p class="faq-item__answer">The iOS Files app has no encryption or lock — files stored there are accessible to anyone who can unlock your phone. Vaulta adds a separate encrypted container with its own passcode, Face ID lock, and AES-256 encryption. No file in Vaulta is readable without your key.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Is Vaulta safer than storing photos and files in iCloud?</summary>
+          <p class="faq-item__answer">Standard iCloud storage is encrypted in transit and at rest, but Apple holds the encryption keys and can access your files. Vaulta's optional iCloud backup encrypts your data on-device before upload — Apple receives only ciphertext and cannot read it. Your recovery key never leaves your device.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">What is zero-knowledge encryption?</summary>
+          <p class="faq-item__answer">Zero-knowledge means only you can decrypt your data. Vaulta never transmits your encryption keys, passcode, or file contents to any server. The developer has no master key and cannot assist with recovery — your passcode and recovery key are the only path to your data.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Can Vaulta protect private documents and PDFs, not just photos?</summary>
+          <p class="faq-item__answer">Yes. Vaulta encrypts any file type — PDFs, Word documents, Excel files, audio recordings, ZIP archives, and more. Import from your iPhone's Files app or camera roll. Every file, regardless of format, is encrypted with AES-256 before storage.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">What happens if my phone is stolen?</summary>
+          <p class="faq-item__answer">A thief cannot read your vault files. AES-256 encryption protects them even if the device storage is extracted. The decoy vault (PRO) lets you reveal a separate vault under duress while keeping your real files hidden. Break-in alerts (PRO) notify you if repeated wrong passcodes are entered.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GEO EDUCATIONAL CONTENT -->
+  <section class="faq geo-education" id="geo-education">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Common Questions About Secure File &amp; Photo Vaults</h2>
+        <p>Authoritative answers to help you understand how encrypted vault apps work.</p>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">How do vault apps protect your files?</summary>
+          <p class="faq-item__answer">Vault apps protect files through on-device encryption — your files are converted into unreadable ciphertext using a secret key before being written to storage. The key is protected by your passcode and stored in a hardware-secured area of your device (the iOS Keychain, backed by the Secure Enclave). Without the correct key, the encrypted data is computationally impossible to read. Vaulta uses AES-GCM 256-bit encryption, the same standard used in banking and government communications.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Why does on-device encryption matter?</summary>
+          <p class="faq-item__answer">On-device encryption means your files are protected even if the physical device is compromised. Because encryption happens locally and the key never leaves your device, there is no central server that can be hacked, subpoenaed, or breached to expose your files. This is fundamentally different from cloud storage, where the service provider holds the decryption keys. On-device encryption shifts control entirely to you.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">What are the risks of cloud-only storage?</summary>
+          <p class="faq-item__answer">With cloud-only storage, your files are protected in transit and at rest, but the service provider holds the encryption keys — meaning they can access your files if required by law or under a security breach. If the cloud service experiences an outage, your files become temporarily inaccessible. Cloud-stored files may also be subject to data retention policies you cannot control. On-device vaults like Vaulta eliminate these risks by keeping encryption keys on your device only.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Local vs cloud storage — which is more private?</summary>
+          <p class="faq-item__answer">Local storage is more private when the encryption keys are yours alone. Storing files locally without encryption is no safer than cloud — someone with physical device access can read them. The combination that maximizes privacy is local on-device storage with strong encryption and keys you control. This is the model Vaulta is built on. Standard cloud storage (iCloud, Google Drive, Dropbox) gives the provider technical ability to access your files because they hold the keys.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">What does zero-knowledge mean in practice?</summary>
+          <p class="faq-item__answer">Zero-knowledge means the service provider has no technical ability to read your data. In practice, this requires that encryption and decryption happen exclusively on your device, and that your keys are never shared with any server. For Vaulta, zero-knowledge means: no account is required, no file contents are ever transmitted, and the developer has no master key or backdoor. If you forget your passcode and lose your recovery key, no one — including Vaulta — can recover your data.</p>
+        </details>
+
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Why does a file vault protect more than a photo vault?</summary>
+          <p class="faq-item__answer">A photo-only vault protects images and videos but leaves other sensitive files unprotected. Sensitive data on a phone often includes PDFs, scanned IDs, contracts, financial records, audio memos, and other document types that a photo vault cannot store. A secure file vault like Vaulta encrypts any file type — not just media — giving you a single, consistent encryption layer for everything private on your device. This also prevents sensitive documents from being left exposed in the Files app or email attachments.</p>
         </details>
 
       </div>
@@ -540,6 +1002,33 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
+      <div class="footer__keyword-links fade-in">
+        <div class="footer__keyword-group">
+          <p class="footer__keyword-label">Secure File Storage</p>
+          <ul>
+            <li><a href="#why-file-vault">Secure File Vault</a></li>
+            <li><a href="#file-types">Encrypted File Storage</a></li>
+            <li><a href="#file-types">Private Document Vault</a></li>
+            <li><a href="#why-file-vault">Hide Files on iPhone</a></li>
+          </ul>
+        </div>
+        <div class="footer__keyword-group">
+          <p class="footer__keyword-label">Photo &amp; Video Privacy</p>
+          <ul>
+            <li><a href="#photo-vault">Photo Vault App</a></li>
+            <li><a href="#photo-vault">Hide Photos on iPhone</a></li>
+            <li><a href="#photo-vault">Private Video Vault</a></li>
+          </ul>
+        </div>
+        <div class="footer__keyword-group">
+          <p class="footer__keyword-label">Security &amp; Trust</p>
+          <ul>
+            <li><a href="#comparison">Vaulta vs Hidden Album</a></li>
+            <li><a href="#security">Security Architecture</a></li>
+            <li><a href="#faq">How Encryption Works</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer__inner">
         <span class="footer__logo">VAULTA</span>
         <ul class="footer__links">
