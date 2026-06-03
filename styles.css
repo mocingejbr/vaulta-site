@@ -88,6 +88,15 @@ section {
   color: var(--text-primary);
 }
 
+.nav__logo::after {
+  content: '●';
+  margin-left: 4px;
+  color: var(--accent);
+  font-size: 8px;
+  vertical-align: super;
+  line-height: 1;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -148,6 +157,10 @@ section {
   line-height: 1;
   margin-bottom: 20px;
   animation: fadeInUp 0.6s ease-out both;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 55%, #AE6DFF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero__tagline {
@@ -237,6 +250,9 @@ section {
 .section-header p {
   font-size: 16px;
   color: var(--text-secondary);
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===== FEATURES ===== */
@@ -264,7 +280,7 @@ section {
 .feature-card:hover {
   transform: translateY(-2px);
   border-color: rgba(148, 84, 250, 0.25);
-  box-shadow: 0 4px 20px rgba(148, 84, 250, 0.12);
+  box-shadow: 0 4px 24px rgba(148, 84, 250, 0.22), 0 0 0 1px rgba(148, 84, 250, 0.12);
 }
 
 .feature-card__icon {
@@ -310,9 +326,9 @@ section {
   position: absolute;
   top: 20px;
   right: -12px;
-  width: 24px;
-  height: 1px;
-  background: linear-gradient(to right, var(--glass-border), transparent);
+  width: 32px;
+  height: 2px;
+  background: linear-gradient(to right, rgba(148, 84, 250, 0.4), transparent);
 }
 
 .step__number {
@@ -380,8 +396,16 @@ section {
 }
 
 .trust-card__icon {
-  font-size: 32px;
-  margin-bottom: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(148, 84, 250, 0.12);
+  border: 1px solid rgba(148, 84, 250, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  font-size: 28px;
 }
 
 .trust-card__title {
@@ -409,7 +433,7 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 50%, rgba(148, 84, 250, 0.18) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(148, 84, 250, 0.28) 0%, transparent 80%);
   pointer-events: none;
 }
 
@@ -423,6 +447,10 @@ section {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
+  background: linear-gradient(135deg, #FFFFFF 0%, #AE6DFF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cta-section p {
@@ -508,10 +536,11 @@ section {
   padding: 80px 0 40px;
   border-bottom: 1px solid var(--glass-border);
   margin-bottom: 56px;
+  background: linear-gradient(to bottom, rgba(148, 84, 250, 0.08) 0%, transparent 100%);
 }
 
 .legal-hero h1 {
-  font-size: 28px;
+  font-size: clamp(32px, 4vw, 44px);
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 8px;
@@ -519,7 +548,7 @@ section {
 
 .legal-hero p {
   font-size: 13px;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
 }
 
 .legal-content {
@@ -689,14 +718,15 @@ section {
 }
 
 .pricing-card--featured {
-  border-color: rgba(148, 84, 250, 0.5);
+  border-color: rgba(148, 84, 250, 0.7);
   background: rgba(148, 84, 250, 0.08);
+  box-shadow: 0 0 0 1px rgba(148, 84, 250, 0.2), 0 8px 40px rgba(148, 84, 250, 0.25), 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .pricing-card__badge {
   align-self: flex-start;
-  padding: 3px 10px;
-  font-size: 10px;
+  padding: 4px 14px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -704,6 +734,7 @@ section {
   background: var(--accent);
   border-radius: var(--radius-pill);
   margin-bottom: -8px;
+  box-shadow: 0 2px 12px rgba(148, 84, 250, 0.4);
 }
 
 .pricing-card__header {
@@ -789,10 +820,15 @@ section {
   flex-direction: column;
 }
 
+.review-card:first-child {
+  border-color: rgba(148, 84, 250, 0.3);
+  background: rgba(148, 84, 250, 0.06);
+}
+
 .review-card__stars {
   color: #FFD700;
-  font-size: 14px;
-  letter-spacing: 0.05em;
+  font-size: 16px;
+  letter-spacing: 0.12em;
   margin-bottom: 12px;
 }
 
@@ -853,9 +889,9 @@ section {
   display: flex;
   gap: 12px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 40px auto 0;
-  max-width: 440px;
+  max-width: 520px;
 }
 
 .hero__screenshot {
@@ -875,6 +911,18 @@ section {
   display: block;
 }
 
+.hero__screenshot:nth-child(1) img,
+.hero__screenshot:nth-child(3) img {
+  opacity: 0.82;
+  transform: scale(0.96);
+}
+
+.hero__screenshot:nth-child(2) img {
+  height: 300px;
+  border-color: rgba(148, 84, 250, 0.35);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(148, 84, 250, 0.25), 0 0 0 1px rgba(148, 84, 250, 0.15);
+}
+
 .hero__screenshot figcaption {
   display: none;
 }
@@ -888,6 +936,15 @@ section {
   .hero__screenshot img {
     height: 200px;
     border-radius: 14px;
+  }
+
+  .hero__screenshot:nth-child(1) img,
+  .hero__screenshot:nth-child(3) img {
+    transform: none;
+  }
+
+  .hero__screenshot:nth-child(2) img {
+    height: 240px;
   }
 }
 
@@ -994,7 +1051,7 @@ section {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   margin-bottom: 36px;
 }
 
@@ -1002,15 +1059,15 @@ section {
   font-size: 15px;
   color: var(--text-secondary);
   line-height: 1.6;
-  padding-left: 20px;
-  position: relative;
+  padding: 16px 20px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-left: 2px solid var(--accent);
+  border-radius: var(--radius-card);
 }
 
 .photo-vault-list li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: var(--accent-light);
+  display: none;
 }
 
 .photo-vault-list strong {
@@ -1088,8 +1145,16 @@ section {
 }
 
 .differentiation-item__icon {
-  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(148, 84, 250, 0.12);
+  border: 1px solid rgba(148, 84, 250, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+  font-size: 22px;
   line-height: 1.3;
 }
 
@@ -1110,6 +1175,18 @@ section {
 .geo-education {
   background: var(--bg-main);
   border-top: 1px solid var(--glass-border);
+}
+
+/* ===== PRICING FEATURED FEATURES ===== */
+.pricing-card--featured .pricing-card__features li {
+  color: var(--text-primary);
+}
+
+/* ===== SECTION HEADER MOBILE ===== */
+@media (max-width: 600px) {
+  .section-header {
+    margin-bottom: 40px;
+  }
 }
 
 /* ===== FOOTER KEYWORD LINKS ===== */
