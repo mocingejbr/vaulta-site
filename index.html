@@ -223,8 +223,39 @@
           </span>
         </a>
         <p class="hero-proof">★★★★★ &nbsp;5.0 on App Store</p>
-        <p class="hero-hint">Free download &middot; No account required</p>
+        <p class="hero-hint">Free download &middot; PRO free for 14 days &middot; No account required</p>
         <a href="#how-it-works" class="hero-secondary-cta">See how it works ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>What people are saying</h2>
+        <p>Rated 5 stars on the App Store.</p>
+      </div>
+      <div class="reviews-grid">
+
+        <div class="review-card fade-in">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__quote">"Finally a vault app I actually trust. The decoy vault alone is worth it."</p>
+          <span class="review-card__author">— jakobm94, App Store</span>
+        </div>
+
+        <div class="review-card fade-in">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__quote">"Dead simple to use and the encryption actually works. No subscription tricks."</p>
+          <span class="review-card__author">— privacymatters_, App Store</span>
+        </div>
+
+        <div class="review-card fade-in">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__quote">"Switched from another app after seeing what Vaulta offers for free. No regrets."</p>
+          <span class="review-card__author">— Marisol R., App Store</span>
+        </div>
+
       </div>
     </div>
   </section>
@@ -360,37 +391,6 @@
     </div>
   </section>
 
-  <!-- REVIEWS -->
-  <section class="reviews" id="reviews">
-    <div class="container">
-      <div class="section-header fade-in">
-        <h2>What people are saying</h2>
-        <p>Rated 5 stars on the App Store.</p>
-      </div>
-      <div class="reviews-grid">
-
-        <div class="review-card fade-in">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__quote">"Finally a vault app I actually trust. The decoy vault alone is worth it."</p>
-          <span class="review-card__author">— jakobm94, App Store</span>
-        </div>
-
-        <div class="review-card fade-in">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__quote">"Dead simple to use and the encryption actually works. No subscription tricks."</p>
-          <span class="review-card__author">— privacymatters_, App Store</span>
-        </div>
-
-        <div class="review-card fade-in">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__quote">"Switched from another app after seeing what Vaulta offers for free. No regrets."</p>
-          <span class="review-card__author">— Marisol R., App Store</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- PRICING -->
   <section class="pricing" id="pricing">
     <div class="container">
@@ -451,6 +451,7 @@
               <span class="app-store-btn__store">App Store</span>
             </span>
           </a>
+          <p class="pricing-card__trial">14-day free trial · Cancel anytime</p>
         </div>
 
       </div>
@@ -465,47 +466,47 @@
         <h2 id="faq-heading">Frequently asked questions</h2>
         <p>Everything you need to know about Vaulta.</p>
       </div>
-      <div class="faq-list" role="list">
+      <div class="faq-list">
 
-        <div class="faq-item fade-in" role="listitem">
-          <h3 class="faq-item__question">Is Vaulta free?</h3>
+        <details class="faq-item fade-in" open>
+          <summary class="faq-item__question">Is Vaulta free?</summary>
           <p class="faq-item__answer">Yes. Vaulta is free to download and use. <strong>VAULTA PRO</strong> is an optional upgrade that unlocks encrypted iCloud backup and additional vault options, available as a monthly ($5.99) or yearly ($49.99) subscription.</p>
-        </div>
+        </details>
 
-        <div class="faq-item fade-in" role="listitem">
-          <h3 class="faq-item__question">How does Vaulta encrypt my files?</h3>
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">How does Vaulta encrypt my files?</summary>
           <p class="faq-item__answer">Vaulta uses AES-GCM with a 256-bit symmetric key. Files are encrypted on your device before being written to storage — plaintext never touches disk. Your encryption key lives in the iOS Keychain and never leaves your device.</p>
-        </div>
+        </details>
 
-        <div class="faq-item fade-in" role="listitem">
-          <h3 class="faq-item__question">Can anyone access my vault?</h3>
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Can anyone access my vault?</summary>
           <p class="faq-item__answer">No. Vaulta is zero knowledge — not even the developer can read your files. Only your passcode or Face ID unlocks the vault. There is no back door, no server-side access, and no master key.</p>
-        </div>
+        </details>
 
-        <div class="faq-item fade-in" role="listitem">
-          <h3 class="faq-item__question">Does Vaulta use iCloud?</h3>
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Does Vaulta use iCloud?</summary>
           <p class="faq-item__answer">iCloud backup is an optional <strong>VAULTA PRO</strong> feature. If enabled, vault data is encrypted on-device before upload — Apple cannot read your files. Restoring requires your recovery key. You can disable it at any time from within the app.</p>
-        </div>
+        </details>
 
-        <div class="faq-item fade-in" role="listitem">
-          <h3 class="faq-item__question">What happens if I forget my passcode?</h3>
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">What happens if I forget my passcode?</summary>
           <p class="faq-item__answer">You can use your recovery key to regain access. If you lose both your passcode and recovery key, your data cannot be recovered by anyone — including us. Store your recovery key somewhere safe outside the app.</p>
-        </div>
+        </details>
 
-        <div class="faq-item fade-in" role="listitem">
-          <h3 class="faq-item__question">Is Vaulta safe from break-ins?</h3>
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Is Vaulta safe from break-ins?</summary>
           <p class="faq-item__answer">Yes. Break-in alerts notify you if someone tries to access your vault with the wrong passcode. The decoy vault lets you set a second passcode that opens a separate vault, protecting your real files even under pressure.</p>
-        </div>
+        </details>
 
-        <div class="faq-item fade-in" role="listitem">
-          <h3 class="faq-item__question">Does Vaulta work without internet?</h3>
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">Does Vaulta work without internet?</summary>
           <p class="faq-item__answer">Yes. Vaulta is offline-first. All files live locally on your device and are always accessible without a connection. No account or internet is required to use any core feature.</p>
-        </div>
+        </details>
 
-        <div class="faq-item fade-in" role="listitem">
-          <h3 class="faq-item__question">What file types does Vaulta support?</h3>
+        <details class="faq-item fade-in">
+          <summary class="faq-item__question">What file types does Vaulta support?</summary>
           <p class="faq-item__answer">Vaulta supports photos, videos, and documents. Import files from your iPhone camera roll or the Files app. All file types are encrypted regardless of format.</p>
-        </div>
+        </details>
 
       </div>
     </div>
